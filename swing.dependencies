@@ -1,0 +1,26 @@
+[
+    {
+        "account":      "spacecaker",
+        "repository":   "android_device_acer_swing_pac",
+        "target_path":  "device/acer/swing",
+        "revision":     "master"
+    },
+    {
+        "account":      "Vachounette",
+        "repository":   "kernel_s500_cm10",
+        "target_path":  "kernel/acer/swing",
+        "revision":     "master"
+    },
+    {
+        "account":      "Vachounette",
+        "repository":   "acer_s500_cm10_vendor",
+        "target_path":  "vendor/acer/swing",
+        "revision":     "master"
+    }
+    {
+        "account":      "Vachounette",
+        "repository":   "acer_s500_Cm10_ramdisk",
+        "target_path":  "device/acer/swing/ramdisk",
+        "revision":     "master"
+    }	
+]
