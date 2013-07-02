@@ -1,24 +1,21 @@
-# Specify phone tech before including full_phone
-$(call inherit-product, vendor/pac/config/gsm.mk)
+# Check for target product
+ifeq (pac_swing,$(TARGET_PRODUCT))
 
-# Inherit some common pac stuff.
-$(call inherit-product, vendor/pac/config/common_full_phone.mk)
+# OVERLAY_TARGET adds overlay asset source
+OVERLAY_TARGET := pa_xhdpi
 
-# Release name
-PRODUCT_RELEASE_NAME := swing
+# AOKP device overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/pac/overlay/aokp/device/mint
 
-# Inherit vendor blobs.
-$(call inherit-product, vendor/acer/swing/swing-vendor-blobs.mk)
+# PAC device overlay
+$(shell cp -f vendor/pac/overlay/pac/samsung/xhdpi/frameworks/base/core/res/assets/images/android-logo-mask.png frameworks/base/core/res/assets/images/android-logo-mask.png)
 
-# Inherit device configuration
-$(call inherit-product, device/acer/swing/device_swing.mk)
+# include ParanoidAndroid common configuration
+include vendor/pac/config/pac_common.mk
 
-# Device naming
-PRODUCT_DEVICE := swing
+# Inherit CM device configuration
+$(call inherit-product, device/acer/swing/cm.mk)
+
 PRODUCT_NAME := pac_swing
-PRODUCT_BRAND := acer
-PRODUCT_MODEL := CloudMobile
-PRODUCT_MANUFACTURER := acer
 
-# Set build fingerprint / ID / Product Name ect.
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=acer_swing BUILD_FINGERPRINT=acer/swing/swing:4.0.4/IMM76D/96068.7:user/release-keys PRIVATE_BUILD_DESC="=2.35.531.7 CL96068 release-keys" BUILD_NUMBER=96068
+endif
