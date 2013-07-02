@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+                android:key="ecomode"
+                android:title="@string/eco_mode_title">
+    <!-- Touchkey backlight -->
+    <CheckBoxPreference
+                android:key="eco_gpu"
+                android:title="@string/eco_mode_gpu_head"
+                android:summary="@string/eco_mode_summary_gpu_head"
+                android:defaultValue="false"
+                />
+
+    <CheckBoxPreference
+                android:key="eco_display"
+                android:title="@string/eco_mode_display_head"
+                android:summary="@string/eco_mode_summary_display_head"
+                android:defaultValue="false"
+                />
+    </PreferenceCategory>
+</PreferenceScreen>
+
