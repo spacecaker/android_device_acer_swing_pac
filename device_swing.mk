@@ -59,6 +59,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/acer/swing/configs/egl.cfg:system/lib/egl/egl.cfg
 
+# PAC-bootanimation
+PRODUCT_COPY_FILES +=  \
+    device/acer/swing/pac-bootanimation/bootanimation.zip:system/media/bootanimation.zip
+	
 
 # call dalvik heap config
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
