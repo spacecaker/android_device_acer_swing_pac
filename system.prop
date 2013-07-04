@@ -35,3 +35,9 @@ ro.bluetooth.remote.autoconnect=true
 # system property for Bluetooth discoverability time out in seconds
 # 0: Always discoverable
 debug.bt.discoverable_time=0
+
+# Ril sends only one RIL_UNSOL_CALL_RING
+ro.telephony.call_ring.multiple=0
+
+# Default ecclist
+ro.ril.ecclist=112,911,#911,*911
