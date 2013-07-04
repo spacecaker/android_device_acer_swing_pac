@@ -3,7 +3,7 @@
         "account":      "spacecaker",
         "repository":   "android_device_acer_swing_pac",
         "target_path":  "device/acer/swing",
-        "revision":     "master"
+        "revision":     "jellybean"
     },
     {
         "account":      "Vachounette",
