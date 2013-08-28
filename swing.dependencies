@@ -1,9 +1,9 @@
 [
     {
         "account":      "spacecaker",
-        "repository":   "android_device_acer_swing_pac",
+        "repository":   "acer_s500_cm10_device_tree",
         "target_path":  "device/acer/swing",
-        "revision":     "jellybean"
+        "revision":     "master"
     },
     {
         "account":      "Vachounette",
@@ -12,7 +12,7 @@
         "revision":     "master"
     },
     {
-        "account":      "Vachounette",
+        "account":      "spacecaker",
         "repository":   "acer_s500_cm10_vendor",
         "target_path":  "vendor/acer/swing",
         "revision":     "master"

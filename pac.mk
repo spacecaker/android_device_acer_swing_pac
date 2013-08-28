@@ -1,14 +1,14 @@
 # Specify phone tech before including full_phone
-$(call inherit-product, vendor/pac/config/gsm.mk)
-
-# Inherit some common pac stuff.
-$(call inherit-product, vendor/pac/config/common_full_phone.mk)
+$(call inherit-product, vendor/cm/config/gsm.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := swing
 
 # Inherit vendor blobs.
 $(call inherit-product, vendor/acer/swing/swing-vendor-blobs.mk)
+
+# Inherit some common CM stuff.
+$(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/acer/swing/device_swing.mk)

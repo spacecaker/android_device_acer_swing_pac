@@ -10,13 +10,10 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/pac/overlay/aokp/device/mint
 # PAC device overlay
 $(shell cp -f vendor/pac/overlay/pac/samsung/xhdpi/frameworks/base/core/res/assets/images/android-logo-mask.png frameworks/base/core/res/assets/images/android-logo-mask.png)
 
-# Storage device
-$(shell cp -f device/acer/swing/storage_list.xml frameworks/base/core/res/res/xml/storage_list.xml)
-
 # PAC boot logo
 PRODUCT_COPY_FILES += \
     vendor/pac/prebuilt/common/bootlogo/pac_logo_720x1280.rle:root/initlogo.rle
-	
+
 # include ParanoidAndroid common configuration
 include vendor/pac/config/pac_common.mk
 
